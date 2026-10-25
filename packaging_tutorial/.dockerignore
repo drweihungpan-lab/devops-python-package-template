@@ -1,0 +1,11 @@
+tests/
+pytest.ini
+README.md
+Makefile
+build/
+.coverage
+*.egg-info
+*.pyc
+*__pycache__
+.idea
+.vscode

@@ -1,0 +1,10 @@
+.vscode
+.venv
+
+*.egg-info/
+__pycache__/
+*.py[cod]
+build/
+tests/packaging_tutorial
+example_env/
+.coverage

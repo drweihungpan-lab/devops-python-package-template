@@ -1,0 +1,11 @@
+{
+  "package_name": "example",
+  "module_name": "demo_module",
+  "repo_name": "",
+  "author": "",
+  "author_email": "",
+  "project_type": [
+    "application",
+    "library"
+  ]
+}
