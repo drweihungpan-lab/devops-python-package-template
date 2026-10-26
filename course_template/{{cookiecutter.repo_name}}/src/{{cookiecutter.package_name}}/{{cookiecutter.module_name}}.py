@@ -14,13 +14,17 @@ LATE_FROM = pd.Timestamp("2025-12-01")
 LATE_COUNT = 10_000
 
 
-def load_counts(path):
-    """Read daily measurement counts from a CSV file."""
+def load_counts(path, label=None):
+    """Read daily measurement counts from a CSV file or open file.
+
+    `label` names the input in error messages; it defaults to `path`.
+    """
+    label = label or path
     counts = pd.read_csv(path, parse_dates=["date"])
     missing = [column for column in REQUIRED_COLUMNS if column not in counts]
     if missing:
-        raise ValueError(f"{path} is missing column(s): {', '.join(missing)}")
-    logger.info("Read %d rows from %s", len(counts), path)
+        raise ValueError(f"{label} is missing column(s): {', '.join(missing)}")
+    logger.info("Read %d rows from %s", len(counts), label)
     return counts
 
 
