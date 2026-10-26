@@ -1,5 +1,7 @@
 ### About
 
+> **Course template.** `course_template/` is the version used in the 3R course: Python 3.12, a `device_limit` command-line tool (`--input`, `--output`), lint CI active, the pytest and semantic-release jobs commented out, and no AWS steps. Generate it with `cookiecutter course_template/`, or check it with `make test-course-template`.
+
 This repository provides templates for setting up a Python development environment. Users have the option to choose from two templates: 
 1. **Python Application Repository**: Contains setup for a Python application, including a Dockerfile and docker-related build steps.
 2. **Python Library Repository**: A standard setup for developing a Python library.

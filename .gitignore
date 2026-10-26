@@ -8,3 +8,4 @@ build/
 tests/packaging_tutorial
 example_env/
 .coverage
+tests/course_check/
