@@ -24,3 +24,21 @@ jobs:
 
     - name: Test that the example package installs correctly
       run: make test-example-package
+
+  course-template:
+
+    runs-on: ubuntu-latest
+
+    steps:
+    - uses: actions/checkout@v4
+
+    - name: Set up Python
+      uses: actions/setup-python@v5
+      with:
+        python-version: '3.12'
+
+    - name: Install cookiecutter
+      run: pip install -r requirements.txt
+
+    - name: Test that the course template generates a package that passes its own checks
+      run: make test-course-template
