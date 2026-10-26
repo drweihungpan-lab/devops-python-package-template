@@ -8,3 +8,5 @@ build/
 tmp/
 venv/
 .venv/
+limits.csv
+*.egg-info/
